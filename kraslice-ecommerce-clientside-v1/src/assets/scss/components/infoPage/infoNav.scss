@@ -1,0 +1,39 @@
+.body__app__detailContainer__goBackNav {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	height: 6rem;
+	padding-bottom: 2rem;
+
+	width: 100%;
+	max-width: 1600px;
+
+	background-color: $panelBackground;
+
+	.body__app__detailContainer__goBackNav__back {
+		@include chipLink;
+	}
+
+	@media screen and (max-width: 1750px) {
+	}
+	@media screen and (max-width: 1550px) {
+	}
+	@media screen and (max-width: 1350px) {
+	}
+	@media screen and (max-width: 1150px) {
+	}
+	@media screen and (max-width: 950px) {
+	}
+	@media screen and (max-width: 750px) {
+	}
+	@media screen and (max-width: 550px) {
+	}
+	@media screen and (max-width: 450px) {
+		padding-bottom: 0;
+		height: 6rem;
+		.body__app__detailContainer__goBackNav__back {
+			font-size: 0.8rem;
+		}
+	}
+}

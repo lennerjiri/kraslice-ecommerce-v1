@@ -1,0 +1,57 @@
+@import '../../components/cart/itemCard';
+@import '../../components/cart/failedMessage';
+
+.body__app__cartContainer__detailCard__cartItems {
+	width: 75%;
+
+	background-color: #ffff;
+	border-radius: 1rem;
+	box-shadow: $filterBoxshadow;
+	padding: 2rem;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+
+	> h2 {
+		font-size: 2rem;
+		margin-bottom: 2.5rem;
+		position: relative;
+		width: 100%;
+
+		color: $darkText;
+		&:before {
+			content: '';
+			position: absolute;
+			height: 2px;
+			bottom: -1rem;
+			left: 0;
+			right: 0;
+			background-color: $separator;
+		}
+	}
+
+	@media screen and (max-width: 1750px) {
+		width: 100%;
+		gap: 2rem;
+	}
+	// @media screen and (max-width: 1550px) {
+	// }
+	// @media screen and (max-width: 1350px) {
+	// }
+	// @media screen and (max-width: 1150px) {
+	// }
+	// @media screen and (max-width: 950px) {
+	// 	// le problem
+	// }
+	// @media screen and (max-width: 750px) {
+	// }
+	// @media screen and (max-width: 550px) {
+	// }
+	// @media screen and (max-width: 450px) {
+	// }
+}
+
+.body__app__cartContainer__detailCard__cartItems___off {
+	width: 100%;
+}

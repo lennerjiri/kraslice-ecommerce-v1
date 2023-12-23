@@ -1,0 +1,61 @@
+.body__app__homeContainer__main__pageNav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+
+	height: 6rem;
+	width: 100%;
+	max-width: 1600px;
+
+	margin-top: auto;
+	background-color: #f4f4f4;
+
+	.body__app__homeContainer__main__pageNav__buttonContainer {
+		display: flex;
+		justify-content: center;
+		user-select: none;
+		gap: 0.7rem;
+
+		.body__app__homeContainer__main__pageNav__buttonContainer__button {
+			font-size: 1.5rem;
+			padding: 0.5em 0.7em;
+			border: $darkText 2px solid;
+			border-radius: 0.3rem;
+			transition: $chipTransition;
+		}
+		.body__app__homeContainer__main__pageNav__buttonContainer__button___available {
+			cursor: pointer;
+			background-color: $systemColor___interact;
+
+			color: white;
+			border: transparent 2px solid;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+			&:active {
+				transform: scale(1.2);
+			}
+		}
+
+		.body__app__homeContainer__main__pageNav__buttonContainer__button__pageNumber {
+			width: 3.25rem;
+
+			box-sizing: border-box;
+			text-align: center;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			font-size: 1.5rem;
+			font-weight: 500;
+
+			border: $darkText 2px solid;
+			color: $darkText;
+			outline: none;
+
+			border-radius: 0.3rem;
+		}
+	}
+}

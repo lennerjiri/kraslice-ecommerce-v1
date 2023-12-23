@@ -1,0 +1,156 @@
+.body__app__homeContainer__header {
+	border-bottom: 1px solid $separator;
+	height: 5rem;
+
+	background-color: $navBackground;
+
+	position: sticky;
+	display: flex;
+
+	letter-spacing: -1.5px;
+	word-spacing: 0.5rem;
+
+	top: 0;
+	z-index: 100;
+
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	color: $darkText;
+
+	.body__app__homeContainer__header__headerContainer {
+		width: 100%;
+		height: 100%;
+
+		max-width: 1600px;
+
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.body__app__homeContainer__header__headerContainer__title {
+			@include NavMenuLink;
+
+			display: flex;
+			align-items: center;
+
+			font-size: 1.8rem;
+			font-weight: 400;
+
+			position: absolute;
+			left: 0rem;
+
+			color: $darkText;
+
+			> img {
+				height: 2rem;
+				margin-left: 0.75rem;
+			}
+		}
+
+		.body__app__homeContainer__header__headerContainer__linksContainer {
+			position: absolute;
+			right: 0;
+
+			display: flex;
+			align-items: center;
+			gap: 3rem;
+
+			height: 100%;
+
+			.body__app__homeContainer__header__headerContainer__workshops {
+				@include NavMenuLink;
+			}
+
+			.body__app__homeContainer__header__headerContainer__about {
+				@include NavMenuLink;
+			}
+
+			.body__app__homeContainer__header__headerContainer__cart {
+				@include NavMenuLink;
+
+				position: relative;
+				font-size: 2.2rem;
+				padding: 0.3em;
+
+				.body__app__homeContainer__header__headerContainer__cart__count {
+					background-color: $systemColor;
+					color: white;
+
+					position: absolute;
+					left: 0.8em;
+					bottom: 1.25em;
+					border-radius: 2rem;
+					font-size: 0.7rem;
+					padding: 0.3em 0.5em;
+					font-weight: bold;
+
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					> p {
+						letter-spacing: 1px;
+					}
+				}
+			}
+			.body__app__homeContainer__header__headerContainer__nav {
+				@include NavMenuLink;
+
+				font-size: 2.2rem;
+				padding: 0.3em;
+			}
+		}
+
+		@media screen and (max-width: 1750px) {
+			max-width: 1500px;
+		}
+		@media screen and (max-width: 1550px) {
+			max-width: 1300px;
+		}
+		@media screen and (max-width: 1350px) {
+			max-width: 1100px;
+		}
+		@media screen and (max-width: 1150px) {
+			max-width: 900px;
+			.body__app__homeContainer__header__headerContainer__linksContainer {
+				gap: 1rem;
+			}
+		}
+		@media screen and (max-width: 950px) {
+			max-width: 700px;
+		}
+		@media screen and (max-width: 750px) {
+			max-width: 500px;
+		}
+		@media screen and (max-width: 550px) {
+			max-width: 400px;
+
+			.body__app__homeContainer__header__headerContainer__linksContainer {
+				gap: 0.5rem;
+			}
+
+			.body__app__homeContainer__header__headerContainer__title {
+				font-size: 1.5rem;
+			}
+
+			.body__app__homeContainer__header__headerContainer__linksContainer {
+				.body__app__homeContainer__header__headerContainer__cart {
+					font-size: 1.9rem;
+					.body__app__homeContainer__header__headerContainer__cart__count {
+						font-size: 0.7rem;
+						padding: 0.3em 0.4em;
+					}
+				}
+				.body__app__homeContainer__header__headerContainer__nav {
+					font-size: 1.9rem;
+				}
+			}
+		}
+		@media screen and (max-width: 450px) {
+			max-width: 300px;
+		}
+	}
+}

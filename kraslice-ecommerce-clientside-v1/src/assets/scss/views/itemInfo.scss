@@ -1,0 +1,26 @@
+@import '../components/infoPage/carousel';
+@import '../components/infoPage/infoNav';
+@import '../components/infoPage/itemDetailCard';
+
+.body__app__detailContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	// info nav
+	.body__app__detailContainer__detailCard {
+		display: flex;
+		align-items: flex-start;
+		width: 100%;
+		max-width: 1600px;
+
+		gap: 5rem;
+
+		// carousel
+
+		// detail card
+		
+	}
+}

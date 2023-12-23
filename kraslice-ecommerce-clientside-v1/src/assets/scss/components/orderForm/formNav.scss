@@ -1,0 +1,17 @@
+.body__app__orderContainer__goBackNav {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	height: 6rem;
+	padding-bottom: 2rem;
+
+	width: 100%;
+	max-width: 1600px;
+
+	background-color: $panelBackground;
+
+	.body__app__cartContainer__goBackNav__back {
+		@include chipLink;
+	}
+}

@@ -1,0 +1,22 @@
+.body__app__cartContainer__detailCard__cartItems___empty {
+  padding: 1rem;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  > img {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+
+    position: relative;
+    width: 100%;
+
+    color: $darkText;
+  }
+}

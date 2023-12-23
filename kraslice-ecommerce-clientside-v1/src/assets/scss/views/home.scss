@@ -1,0 +1,259 @@
+@import '../components/home/asideFilter';
+@import '../components/home/categoryNavigation';
+@import '../components/home/item';
+@import '../components/home/pager';
+
+body {
+	width: 100vw;
+
+	font-family: 'Rubik', sans-serif;
+
+	width: 100%;
+	.body__app__homeContainer__main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+
+		width: 100%;
+		max-width: 1600px;
+
+		////// FILTER NAV ///////
+
+		.body__app__homeContainer__main__contentContainer {
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-start;
+			gap: 5rem;
+
+			margin-top: 2rem;
+			width: 100%;
+			max-width: 1600px;
+
+			position: relative;
+
+			////// ASIDE FILTER ///////
+
+			.body__app__homeContainer__main__contentContainer__itemContainer {
+				width: 75%;
+				display: grid;
+				grid-template-columns: repeat(
+					3,
+					minmax(350px, 400px)
+						// budu řešit přes media querry
+				);
+
+				grid-gap: 2.5rem;
+
+				///// ITEMS //////
+			}
+			.body__app__homeContainer__main__contentContainer__itemContainer___off {
+				width: 100%;
+				grid-template-columns: repeat(
+					4,
+					minmax(350px, 400px)
+						// budu řešit přes media querry
+				);
+			}
+
+			.empty__style {
+				background-color: #ffff;
+				border-radius: 1rem;
+				box-shadow: $filterBoxshadow;
+				padding: 1.5rem;
+				box-sizing: border-box;
+
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+
+				> img {
+					height: 3.5rem;
+					width: 3.5rem;
+				}
+
+				h2 {
+					font-size: 1.5rem;
+
+					position: relative;
+					width: 100%;
+
+					color: $darkText;
+				}
+			}
+
+			.body__app__homeContainer__main__contentContainer__itemContainer___empty {
+				@extend .empty__style;
+				width: 75%;
+			}
+			.body__app__homeContainer__main__contentContainer__itemContainer___empty___off {
+				@extend .empty__style;
+				width: 100%;
+			}
+		}
+		////// PAGER //////
+		@media screen and (max-width: 1750px) {
+			max-width: 1500px;
+			.body__app__homeContainer__main__contentContainer {
+				.body__app__homeContainer__main__contentContainer__itemContainer {
+					width: 75%;
+					display: grid;
+					grid-template-columns: repeat(
+						3,
+						minmax(300px, 350px)
+					);
+
+					grid-gap: 2.5rem;
+
+					///// ITEMS //////
+				}
+				.body__app__homeContainer__main__contentContainer__itemContainer___off {
+					width: 100%;
+					grid-template-columns: repeat(
+						4,
+						minmax(300px, 350px)
+					);
+				}
+			}
+		}
+		@media screen and (max-width: 1550px) {
+			max-width: 1300px;
+			.body__app__homeContainer__main__contentContainer {
+				.body__app__homeContainer__main__contentContainer__itemContainer {
+					width: 70%;
+					display: grid;
+					grid-template-columns: repeat(
+						2,
+						minmax(350px, 400px)
+					);
+
+					grid-gap: 2.5rem;
+
+					///// ITEMS //////
+				}
+				.body__app__homeContainer__main__contentContainer__itemContainer___off {
+					width: 100%;
+					grid-template-columns: repeat(
+						3,
+						minmax(350px, 450px)
+					);
+				}
+			}
+		}
+		@media screen and (max-width: 1350px) {
+			max-width: 1100px;
+			.body__app__homeContainer__main__contentContainer {
+				gap: 4rem;
+				.body__app__homeContainer__main__contentContainer__itemContainer {
+					width: 70%;
+					display: grid;
+					grid-template-columns: repeat(
+						2,
+						minmax(300px, 350px)
+					);
+
+					grid-gap: 2.5rem;
+
+					///// ITEMS //////
+				}
+				.body__app__homeContainer__main__contentContainer__itemContainer___off {
+					width: 100%;
+					grid-template-columns: repeat(
+						3,
+						minmax(300px, 350px)
+					);
+				}
+			}
+		}
+		@media screen and (max-width: 1150px) {
+			max-width: 900px;
+			.body__app__homeContainer__main__contentContainer {
+				gap: 4rem;
+				.body__app__homeContainer__main__contentContainer__itemContainer {
+					width: 50%;
+					display: grid;
+					grid-template-columns: repeat(
+						1,
+						minmax(350px, 450px)
+					);
+
+					grid-gap: 2.5rem;
+
+					///// ITEMS //////
+				}
+				.body__app__homeContainer__main__contentContainer__itemContainer___off {
+					width: 100%;
+					grid-template-columns: repeat(
+						2,
+						minmax(350px, 450px)
+					);
+				}
+			}
+		}
+		@media screen and (max-width: 950px) {
+			max-width: 700px;
+			.body__app__homeContainer__main__contentContainer {
+				.body__app__homeContainer__main__contentContainer__itemContainer {
+					width: 50%;
+					display: grid;
+					grid-template-columns: repeat(
+						1,
+						minmax(300px, 350px)
+					);
+
+					grid-gap: 2.5rem;
+
+					///// ITEMS //////
+				}
+				.body__app__homeContainer__main__contentContainer__itemContainer___off {
+					width: 100%;
+					grid-template-columns: repeat(
+						2,
+						minmax(300px, 350px)
+					);
+				}
+			}
+		}
+		@media screen and (max-width: 750px) {
+			max-width: 500px;
+			.body__app__homeContainer__main__contentContainer {
+				flex-direction: column;
+			}
+
+			.body__app__homeContainer__main__contentContainer {
+				margin-top: 3rem;
+				.body__app__homeContainer__main__contentContainer__itemContainer {
+					width: 100%;
+					grid-template-columns: repeat(
+						1,
+						minmax(300px, 500px)
+					);
+
+					///// ITEMS //////
+				}
+				.body__app__homeContainer__main__contentContainer__itemContainer___off {
+					width: 100%;
+					grid-template-columns: repeat(
+						1,
+						minmax(300px, 500px)
+					);
+				}
+			}
+
+			.empty__style {
+				width: 100%;
+			}
+		}
+		@media screen and (max-width: 550px) {
+			max-width: 400px;
+		}
+		@media screen and (max-width: 450px) {
+			max-width: 300px;
+			.body__app__homeContainer__main__contentContainer {
+				margin-top: 2rem;
+			}
+			// velikosti
+			// mezery
+		}
+	}
+}

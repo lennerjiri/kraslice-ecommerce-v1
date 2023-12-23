@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "description": "Nuxt.js application for selling easter eggs and holiday merchandise.",
+  "repository": "https://github.com/lennerjiri/kraslice-ecommerce-clientside.git",
+  "author": "Jiri Lenner",
+  "license": "MIT",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "eslint": "^8.30.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.8.0",
+    "nuxt": "3.0.0-rc.13",
+    "prettier": "^2.8.1"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.6",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.8",
+    "@vueuse/nuxt": "^9.9.0",
+    "axios": "^1.2.2"
+  }
+}

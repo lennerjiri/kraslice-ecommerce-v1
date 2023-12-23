@@ -1,0 +1,162 @@
+.body__app__homeContainer__main__contentContainer__itemFilter {
+	//border-radius: 5px;
+	border-radius: 1.5rem;
+	width: 25%;
+	box-shadow: $filterBoxshadow;
+	background-color: white;
+
+	position: sticky;
+	top: 9rem;
+
+	box-sizing: border-box;
+	padding: 2rem;
+
+	> h2 {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+		position: relative;
+		width: 100%;
+
+		color: $darkText;
+		&:before {
+			content: '';
+			position: absolute;
+			height: 2px;
+			bottom: -1rem;
+			left: 0;
+			right: 0;
+			background-color: $separator;
+		}
+	}
+
+	.body__app__homeContainer__main__contentContainer__itemFilter__catContainer {
+		width: 100%;
+
+		> p {
+			font-size: 1.5rem;
+			margin-bottom: 0.5em;
+			color: $darkText;
+		}
+
+		> div {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+
+			font-size: 1.3rem;
+			margin-bottom: 0.3rem;
+
+			> p {
+				color: $lightText;
+			}
+
+			> input {
+				width: 1.4rem;
+				height: 1.4rem;
+				accent-color: $navBackground;
+
+				transition: $chipTransition;
+
+				margin-right: 0.5rem;
+
+				&:hover {
+					cursor: pointer;
+					transform: scale(1.2);
+					accent-color: $systemColor;
+				}
+				&:checked {
+					accent-color: $systemColor;
+				}
+				&:active {
+					transform: scale(1.4);
+				}
+			}
+
+			&:last-child {
+				margin-bottom: 2rem;
+			}
+		}
+		.body__app__homeContainer__main__contentContainer__itemFilter__quantityCountContainer {
+			display: flex;
+			justify-content: flex-start;
+			user-select: none;
+
+			.body__app__homeContainer__main__contentContainer__itemFilter__quantityCountContainer__button {
+				font-size: 1.2rem;
+				padding: 0.5em 0.7em;
+				border: $darkText 2px solid;
+				border-radius: 0.3rem;
+				transition: $chipTransition;
+
+				&:first-child {
+					border-top-left-radius: 0.5rem;
+					border-bottom-left-radius: 0.5rem;
+				}
+				&:last-child {
+					border-top-right-radius: 0.5rem;
+					border-bottom-right-radius: 0.5rem;
+				}
+				cursor: not-allowed;
+			}
+			.body__app__homeContainer__main__contentContainer__itemFilter__quantityCountContainer__count__available {
+				cursor: pointer;
+				background-color: $systemColor___interact;
+
+				color: white;
+				border: transparent 2px solid;
+
+				&:hover {
+					transform: scale(1.1);
+				}
+				&:active {
+					transform: scale(1.2);
+				}
+			}
+
+			.body__app__homeContainer__main__contentContainer__itemFilter__quantityCountContainer__count {
+				width: 2.7rem;
+				height: 2.7rem;
+
+				box-sizing: border-box;
+				text-align: center;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				font-size: 1.2rem;
+				font-weight: 500;
+				margin: 0 1rem;
+
+				border: $darkText 2px solid;
+				color: $darkText;
+				outline: none;
+
+				border-radius: 0.3rem;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1750px) {
+		width: 25%;
+	}
+	@media screen and (max-width: 1550px) {
+		width: 30%;
+	}
+	@media screen and (max-width: 1350px) {
+		width: 30%;
+	}
+	@media screen and (max-width: 1150px) {
+		width: 50%;
+	}
+	@media screen and (max-width: 950px) {
+	}
+	@media screen and (max-width: 750px) {
+		position: static;
+		width: 100%;
+	}
+	@media screen and (max-width: 550px) {
+	}
+	@media screen and (max-width: 450px) {
+	}
+}
